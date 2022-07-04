@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+float l,b,h,x,y;
+    
+    scanf("%f",&l);
+    scanf("%f",&b);
+    scanf("%f",&h);
+    x=l*l*l;
+    printf("%.3f\n",x);
+    y=l*b*h;
+    printf("%.3f",y);
+    
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}

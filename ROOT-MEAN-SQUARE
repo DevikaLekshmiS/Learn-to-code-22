@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+float a,b,c,p,q,r,mean,rt;
+    scanf("%f",&a);
+    scanf("%f",&b);
+    scanf("%f",&c);
+    p=a*a;    
+    q=b*b;
+    r=c*c;
+    
+    mean = (p+q+r)/3;
+    rt=sqrt(mean);
+    printf("%.2f",rt);
+        
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}

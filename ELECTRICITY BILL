@@ -1,0 +1,43 @@
+
+#include <stdio.h>
+float amount(float x,float y);
+int main()
+{
+    printf("Electricity Bill");
+    printf("\n \t\tCALL 1912");
+    printf("\n\tCustomer care 24×7");
+    printf(" \n\t\t\t KSEB    ");
+    int n;
+    float amt,units,charge;
+    char name[50];
+    printf("\nEnter the customer ID: ");
+    scanf("%d",&n);
+    printf("\nEnter the customername: ");
+    scanf("%s",name);
+    printf("Units:");
+    scanf("%f",&units);
+    if(units<=200)
+    charge = 1.20;
+    else if(units<=400)
+    charge = 1.50;
+    else if(units<=600)
+    charge = 1.80;
+    else
+    charge = 2.00;
+    amt=amount(units,charge);
+    printf("Final bill:%.2f",amt);
+    printf("\nPay online https://wss kseb.in");
+    printf("\n\t\t\THANK YOU");
+    return 0;
+    
+}
+float amount(float x, float y)
+{
+    float amount,surcharge,temp;
+    temp=x*y;
+    surcharge=0;
+    surcharge=temp*(15/100);
+    amount=temp+surcharge;
+    return amount;
+    
+}
